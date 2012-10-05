@@ -13,7 +13,7 @@ Translation is provided in one of two ways:  Globally or within a certain contex
 
 This will make an asynchronous GET call to the server to grab resources and send additional parameters, discussed below, in case additional server side evaluation is needed.  It also can take just a straight json file, assuming its permitted serveable content by your web server.  Currently, only JSON data is supported.
 
-Once the data is loaded, it will then map all attributes that have a data-jql10n attribute to the key value in the resource list, and will load the value of this into html.  The exception to this is if the value is another object, in which case it maps the keys to the attributes of the element and the value will be what the attribute is supposed to be.  To help from melting your brain due to that poor explanation, consider this example: say we have an anchor, '<a data-jql10n="element" href="http://google.com" rel="Google for everyone!">Its Google!</a>', and we call '$.jql0n();' and get the following resource from the server:
+Once the data is loaded, it will then map all attributes that have a data-jql10n attribute to the key value in the resource list, and will load the value of this into html.  The exception to this is if the value is another object, in which case it maps the keys to the attributes of the element and the value will be what the attribute is supposed to be.  To help from melting your brain due to that poor explanation, consider this example: say we have an anchor, \<a data-jql10n="element" href="http://google.com" rel="Google for everyone!">Its Google!\</a> and we call '$.jql0n();' and get the following resource from the server:
 
 <code>
  element : { 
